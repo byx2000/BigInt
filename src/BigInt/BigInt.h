@@ -46,11 +46,6 @@ public:
     const BigInt operator^(const BigInt &num) const;
     const BigInt operator^=(const BigInt &num);
 
-    static BigInt Max(const BigInt &a, const BigInt &b);
-    static BigInt Min(const BigInt &a, const BigInt &b);
-    static BigInt Gcd(const BigInt &a, const BigInt &b);
-    static BigInt Lcm(const BigInt &a, const BigInt &b);
-
 private:
 	int sign;
 	std::vector<char> d;

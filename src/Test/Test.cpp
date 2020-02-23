@@ -106,24 +106,6 @@ void BigIntTest::BoundaryTest()
 	ASSERT((BigInt(2) ^ BigInt(3)) == BigInt(8));
 	ASSERT((BigInt(-2) ^ BigInt(3)) == BigInt(-8));
 
-	ASSERT(BigInt::Gcd(BigInt(0), BigInt(1)) == BigInt(1));
-	ASSERT(BigInt::Gcd(BigInt(0), BigInt(2)) == BigInt(2));
-	ASSERT(BigInt::Gcd(BigInt(1), BigInt(0)) == BigInt(1));
-	ASSERT(BigInt::Gcd(BigInt(2), BigInt(0)) == BigInt(2));
-	ASSERT(BigInt::Gcd(BigInt(1), BigInt(1)) == BigInt(1));
-	ASSERT(BigInt::Gcd(BigInt(1), BigInt(2)) == BigInt(1));
-	ASSERT(BigInt::Gcd(BigInt(2), BigInt(1)) == BigInt(1));
-	ASSERT(BigInt::Gcd(BigInt(2), BigInt(2)) == BigInt(2));
-	ASSERT(BigInt::Gcd(BigInt(12), BigInt(15)) == BigInt(3));
-	ASSERT(BigInt::Gcd(BigInt(6), BigInt(12)) == BigInt(6));
-	ASSERT(BigInt::Gcd(BigInt(12), BigInt(12)) == BigInt(12));
-
-	ASSERT(BigInt::Lcm(BigInt(1), BigInt(1)) == BigInt(1));
-	ASSERT(BigInt::Lcm(BigInt(1), BigInt(2)) == BigInt(2));
-	ASSERT(BigInt::Lcm(BigInt(2), BigInt(1)) == BigInt(2));
-	ASSERT(BigInt::Lcm(BigInt(2), BigInt(2)) == BigInt(2));
-	ASSERT(BigInt::Lcm(BigInt(12), BigInt(15)) == BigInt(60));
-
 	watch.end();
 
 	cout << "Boundary test finished" << endl;
