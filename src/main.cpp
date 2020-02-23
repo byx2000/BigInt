@@ -1,4 +1,5 @@
 #include <iostream>
+#include "BigInt/BigInt.h"
 #include "Test/TestUtil.h"
 #include "Test/Test.h"
 
@@ -77,7 +78,7 @@ int main()
 
     //最大公因数
     /*cout << BigInt::Gcd(BigInt(120), BigInt(150)) << endl;
-    cout << BigInt::Gcd(BigInt("28757278364874"), BigInt("917310310739812")) << endl;
+    cout << BigInt::Gcd(BigInt("28757278364874"), BigInt("917310310739812")) << endl;*/
 
     //求大数阶乘
     BigInt res = BigInt(1);
@@ -99,7 +100,7 @@ int main()
 		a = b;
 		b = t + b;
 	}
-	cout << "fib(5000) = " << b << endl;*/
+	cout << "fib(5000) = " << b << endl;
 
     return 0;
 }
