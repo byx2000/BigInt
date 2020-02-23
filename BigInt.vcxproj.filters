@@ -33,10 +33,22 @@
     <ClCompile Include="src\BigInt\BigInt.cpp">
       <Filter>源文件\BigInt</Filter>
     </ClCompile>
+    <ClCompile Include="src\Test\Test.cpp">
+      <Filter>源文件\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Test\TestUtil.cpp">
+      <Filter>源文件\Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BigInt\BigInt.h">
       <Filter>头文件\BigInt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Test\Test.h">
+      <Filter>头文件\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Test\TestUtil.h">
+      <Filter>头文件\Test</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

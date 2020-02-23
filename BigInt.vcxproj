@@ -110,9 +110,12 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,9 +143,13 @@
   <ItemGroup>
     <ClCompile Include="src\BigInt\BigInt.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Test\Test.cpp" />
+    <ClCompile Include="src\Test\TestUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BigInt\BigInt.h" />
+    <ClInclude Include="src\Test\Test.h" />
+    <ClInclude Include="src\Test\TestUtil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

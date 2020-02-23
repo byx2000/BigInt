@@ -1,20 +1,23 @@
 #include <iostream>
-#include "Test/BoundaryTest.h"
-#include "Test/UnitTest.h"
-#include "BigInt/BigInt.h"
+#include "Test/TestUtil.h"
+#include "Test/Test.h"
 
 using namespace std;
 
 int main()
 {
+    CheckMemoryLeak();
+    BigIntTest::Run();
+
+    //
     /*边界条件测试*/
-    BoundaryTest();
+    //BoundaryTest();
 
     /*单元测试*/
 
     //去掉以下注释可运行单元测试
     //单元测试可能需要较长时间，请耐心等待
-	cout << "Begin unit tests" << endl << endl;
+	/*cout << "Begin unit tests" << endl << endl;
 	TestAdd();
 	TestSub();
 	TestMul();
@@ -22,12 +25,12 @@ int main()
 	TestRem();
 	TestPow();
 	TestGcd();
-	TestLcm();
+	TestLcm();*/
 
 	/*用法示例*/
 
     //构造函数与赋值
-    BigInt n1(1);
+    /*BigInt n1(1);
     BigInt n2(-1);
     BigInt n3("12345678987654321");
     BigInt n4("-12345678987654321");
@@ -68,12 +71,12 @@ int main()
     cout << (BigInt(123) != BigInt(456)) << endl;
     cout << (BigInt(123) != BigInt(123)) << endl;
     cout << (BigInt(123) >= BigInt(456)) << endl;
-    cout << (BigInt(123) <= BigInt(456)) << endl;
+    cout << (BigInt(123) <= BigInt(456)) << endl;*/
 
     /*应用示例*/
 
     //最大公因数
-    cout << BigInt::Gcd(BigInt(120), BigInt(150)) << endl;
+    /*cout << BigInt::Gcd(BigInt(120), BigInt(150)) << endl;
     cout << BigInt::Gcd(BigInt("28757278364874"), BigInt("917310310739812")) << endl;
 
     //求大数阶乘
@@ -96,7 +99,7 @@ int main()
 		a = b;
 		b = t + b;
 	}
-	cout << "fib(5000) = " << b << endl;
+	cout << "fib(5000) = " << b << endl;*/
 
     return 0;
 }
