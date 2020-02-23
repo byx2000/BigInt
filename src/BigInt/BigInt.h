@@ -7,8 +7,7 @@ class BigInt
 {
 public:
     /*¹¹Ôìº¯Êý*/
-	BigInt();
-    BigInt(long long i);
+    BigInt(long long i = 0);
 	explicit BigInt(const std::string &s);
 
 	void assign(long long i);

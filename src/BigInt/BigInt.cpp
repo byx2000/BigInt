@@ -7,12 +7,6 @@
 
 using namespace std;
 
-BigInt::BigInt()
-{
-    sign = 1;
-    d.push_back(0);
-}
-
 BigInt::BigInt(long long i)
 {
     assign(i);
