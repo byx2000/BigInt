@@ -45,6 +45,10 @@ public:
     const BigInt operator^(const BigInt &num) const;
     const BigInt operator^=(const BigInt &num);
 
+	// 异常类
+	class DividedByZero {}; // 除以0
+	class ExponentLessThanZero {}; // 指数大于0
+
 private:
 	int sign;
 	std::vector<char> d;

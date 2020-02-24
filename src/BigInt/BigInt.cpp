@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <cmath>
-#include <cassert>
 
 #include "BigInt.h"
 
@@ -487,7 +486,11 @@ BigInt BigInt::dMul(const BigInt &num, int dight)
 
 BigInt BigInt::tryDivision(const BigInt &dividend, const BigInt &divisor, BigInt &remain)
 {
-    assert(divisor != BigInt(0));
+    // ³ýÁã¼ì²â
+    if (divisor == BigInt(0))
+    {
+        throw DividedByZero();
+    }
 
     BigInt res(0);
     BigInt a = dividend, b = divisor;
@@ -541,7 +544,10 @@ BigInt BigInt::tryDivision(const BigInt &dividend, const BigInt &divisor, BigInt
 
 BigInt BigInt::power(const BigInt &a, const BigInt &b)
 {
-    assert(b >= BigInt(0));
+    if (b < BigInt(0))
+    {
+        throw ExponentLessThanZero();
+    }
 
     if (b == BigInt(0))
     {
